@@ -7,28 +7,62 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div class = "layout">
+    <div class = "container">
 
         <div class = "left">
             <div class = "logo">
-                <img src = "./images/odin.png" alt="odinlogo">
-                <h1>Zuk_Bot</h1>
+                    <img src = "./images/odin.png" alt="odinlogo">
+                    <h1 class = "name">Zuk_Bot</h1>
             </div>
             <p class = "header">Photo by <u>Haile West</u> on <u>Uniplash</u></p>
+            
         </div>
+
         <div class = "right">
-            <div class = "content">
-                <p class = "text">This is not a real online service!
-                    You know you need something like this in your life
-                    to help you realize your deepest dreams. Sign up now
-                    to get started.
+            <div class = "top">
+                <p class = "text">This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams. Sign up now to get started.
                 </p>
-                <p class = "text">You <i>know</i> you want to.</p>
+                <p class = "text">You know you want to.</p>
             </div>
-
-
+            <div class = "bottom">
+                <h1 class = "caption">Let's do this!</h1>
+                <form action ="" method="post">
+                    <ul>
+                        <li>
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="first_name" required>
+                        </li>
+                        <li>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="enail" required>
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </li>
+                        <li>
+                            <button type="submit">Create Account</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="last_name" required>
+                        </li>
+                        <li>
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="tel" id="phonenumber" name="phone" required>
+                        </li>
+                        <li>
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" id="confirm" name="confirm_password" required>
+                        </li>
+                    </ul>
+                </form>
+                <p class = "footer">Already have an account? <u>Log in!</u></p>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

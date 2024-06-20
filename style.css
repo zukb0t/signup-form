@@ -8,25 +8,35 @@ body{
     margin:0;
 }
 
-.layout{
+.container{
     display:flex;
     height:100vh;
 }
 
-
 .left{
-    width:30%;
+    min-width:400px;
     background-image:url("./images/trees.jpg");
     background-repeat:no-repeat;
     background-position:center;
-    background-size:100% 100vh;
-    padding-top:10%;
+    background-size:cover;
     display:flex;
     flex-direction:column;
 }
 
 img{
     height:130px;
+}
+
+.logo{
+    position:relative;
+    top:200px;
+    background-color:rgba(0,0,0,0.22);
+    font-family:norse-bold;
+    font-size:1.5rem;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .header{
@@ -36,32 +46,74 @@ img{
     text-align:center;
 }
 
-.logo{
-    background-color:rgba(0,0,0,1);
-    font-family:norse-bold;
-    font-size:1.5rem;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
 .right{
-    width:70%;
     background-color:whitesmoke;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
 }
 
-.content{
-    background-color:rgba(232,232,232);
-    height:35vh;
+.top{
+    background-color:whitesmoke;
+    height:330px;
 }
 
-.content>.text{
+.text{
     margin:0;
+    width:640px;
     padding:1.5rem;
     font-size:1.5rem;
-    width:47%;
+    font-weight:700;
     position:relative;
     top:100px;
+}
+
+form{
+    display:flex;
+    background-color:white;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    max-width:250px;
+}
+
+li{
+    padding:1.5rem;
+    font-size:16px;
+    font-family:sans-serif;
+    list-style:none;
+}
+
+input:focus{
+    box-shadow: 1px 1px 1px blue;
+    border:1px solid blue;
+    outline:blue;
+}
+  
+#password:invalid, #confirm:invalid{
+    border:1px solid red;
+}
+
+.caption, .footer{
+    margin:0;
+    padding:1.5rem;
+}
+
+.caption{
+    background-color:white;
+}
+
+.footer{
+    font-weight:900;
+}
+
+button{
+    width:150px;
+    height:40px;
+    color:white;
+    border:none;
+    border-radius:12px;
+    background-color:#596D48;
 }
